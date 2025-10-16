@@ -2,291 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resonant Ranch Labs — Make Your Own Steak Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Make-Your-Own-Steak Machine</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <canvas id="background-orb"></canvas>
     <header class="site-header">
-        <div class="logo">Resonant Ranch Labs</div>
-        <nav class="site-nav" aria-label="Primary navigation">
-            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
-                <span class="sr-only">Toggle navigation</span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul id="nav-links">
-                <li><a href="#mission">Mission</a></li>
-                <li><a href="#machine">Machine</a></li>
-                <li><a href="#impact">Impact</a></li>
-                <li><a href="#ethics">Ethics</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#contact">Connect</a></li>
+        <div class="logo"><a href="index.html">Make-Your-Own-Steak</a></div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+            <span class="sr-only">Menu</span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="how-it-works.html">How it works</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero" id="top">
-            <div class="hero__content">
-                <p class="hero__eyebrow">Future of Cultivated Protein</p>
-                <h1>Grow steaks without leaving the pasture.</h1>
-                <p class="hero__description">The Make-Your-Own-Steak Machine empowers farmers to cultivate marbled beef from their herd’s own DNA—slashing emissions, honoring animal welfare, and keeping rural economies thriving.</p>
+            <div class="hero__copy">
+                <p class="hero__eyebrow">Homepage</p>
+                <h1>Make-Your-Own-Steak Machine</h1>
+                <p class="hero__tagline">Real beef, no slaughter.</p>
+                <p class="hero__description">A compact microwave-sized biocooker that grows tonight’s steak from verified cow DNA and nutrient cartridges. Load a DNA capsule, insert nutrient cartridges, press start. Your steak is ready for cooking within hours.</p>
                 <div class="hero__actions">
-                    <a class="button button--primary" href="#machine">Discover the Machine</a>
-                    <button class="button button--ghost" data-scroll-target="#impact">See the impact</button>
+                    <button class="button button--primary" data-scroll-target="#how-it-works">See how it works</button>
+                    <a class="button button--outline" href="services.html#pilot">Join our pilot (farmers &amp; restaurants)</a>
                 </div>
-                <dl class="hero__stats" aria-label="Impact forecast">
-                    <div>
-                        <dt>82%</dt>
-                        <dd>projected reduction in pasture-linked emissions per kilogram of beef</dd>
-                    </div>
-                    <div>
-                        <dt>14</dt>
-                        <dd>days from biopsy to butcher-ready cuts</dd>
-                    </div>
-                    <div>
-                        <dt>0</dt>
-                        <dd>animals slaughtered, dignity preserved</dd>
-                    </div>
-                </dl>
             </div>
-            <div class="hero__visual" role="presentation">
-                <div class="hero__machine">
-                    <div class="machine__ring machine__ring--one"></div>
-                    <div class="machine__ring machine__ring--two"></div>
-                    <div class="machine__core">
-                        <span>DNA</span>
-                    </div>
-                </div>
-                <p class="hero__caption">Bio-reactor pods sync with existing barn infrastructure, powered by wind or solar.</p>
+            <figure class="hero__visual" aria-labelledby="hero-visual-caption">
+                <div class="hero__device" role="img" aria-label="Microwave-sized biocooker glowing through transparent chamber"></div>
+                <figcaption id="hero-visual-caption">Microwave-size biocooker glowing through a transparent chamber.</figcaption>
+            </figure>
+        </section>
+
+        <section class="notice" aria-labelledby="notice-heading">
+            <div class="container">
+                <h2 id="notice-heading">Instructions &amp; safety notice</h2>
+                <p>We work with certified partners to introduce this technology via controlled pilots. Make sure to always follow the proper hygiene steps and approved guidelines, as indicated on-screen. Regional food safety approvals apply.</p>
             </div>
         </section>
 
-        <section id="mission" class="section section--two-column">
-            <div class="section__intro">
-                <h2>Why transform the meat industry from within?</h2>
-                <p>Climate change, animal welfare, and rural livelihoods are entangled. Our approach invites farmers—the stewards of land and tradition—to lead a transition that keeps steak on the table without heating the planet or harming livestock.</p>
+        <section id="how-it-works" class="section" aria-labelledby="how-heading">
+            <div class="section__header">
+                <h2 id="how-heading">How does this work?</h2>
+                <p class="section__intro">Source ethically, load &amp; verify, grow, prepare &amp; enjoy.</p>
             </div>
-            <div class="section__content">
-                <article class="card">
-                    <h3>Climate action rooted in practice</h3>
-                    <p>By decoupling meat from methane-heavy herds, the machine reduces land-use pressure and water consumption while keeping carbon stored in soil through regenerative grazing reserved for breeding animals.</p>
+            <div class="steps">
+                <article class="step">
+                    <h3>Source ethically</h3>
+                    <p>Verified DNA is sampled from healthy and responsibly kept cows by participating farmers. Welfare data travel with the NFC chip on the DNA capsule.</p>
                 </article>
-                <article class="card">
-                    <h3>Ethics in everyday work</h3>
-                    <p>Farmers cultivate cells instead of slaughtering animals, aligning daily routines with animal dignity and reducing occupational trauma without forcing dietary change on communities.</p>
+                <article class="step">
+                    <h3>Load &amp; verify</h3>
+                    <p>Insert the DNA capsule and nutrient cartridges. The touchscreen reads NFC chips, verifies origin, and shows estimated grow time and CO₂ / water savings.</p>
                 </article>
-                <article class="card">
-                    <h3>Rural economies stay vibrant</h3>
-                    <p>Ownership stays local. Farmers remain the trusted suppliers, now offering premium cruelty-free cuts cultivated with their herd’s terroir.</p>
+                <article class="step">
+                    <h3>Grow</h3>
+                    <p>Inside the transparent chamber, muscle tissue forms layer by layer under sterile, controlled conditions.</p>
                 </article>
+                <article class="step">
+                    <h3>Prepare &amp; enjoy</h3>
+                    <p>Remove, rest, season, and cook your steak — real meat taste and texture, no slaughter.</p>
+                </article>
+            </div>
+            <div class="section__cta">
+                <a class="button button--ghost" href="how-it-works.html">Learn the science</a>
+                <p class="multimedia-note">Multimedia: Step-by-step infographic (4 icons + short captions).</p>
             </div>
         </section>
 
-        <section id="machine" class="section section--machine">
-            <div class="section__intro">
-                <h2>The Make-Your-Own-Steak Machine</h2>
-                <p>Compact, modular bioreactors that integrate with existing barns. Select DNA from your healthiest cattle, feed the growth medium, and harvest fully structured steaks.</p>
+        <section class="impact" aria-labelledby="impact-heading">
+            <div class="impact__header">
+                <h2 id="impact-heading">Which problems do we solve?</h2>
+                <p class="tagline">Meat without compromise.</p>
             </div>
-            <div class="machine-steps" role="tablist" aria-label="Machine walkthrough">
-                <button class="machine-step is-active" role="tab" aria-selected="true" aria-controls="step-content-1" id="step-tab-1">1. Preserve identity</button>
-                <button class="machine-step" role="tab" aria-selected="false" aria-controls="step-content-2" id="step-tab-2">2. Seed &amp; scaffold</button>
-                <button class="machine-step" role="tab" aria-selected="false" aria-controls="step-content-3" id="step-tab-3">3. Grow &amp; monitor</button>
-                <button class="machine-step" role="tab" aria-selected="false" aria-controls="step-content-4" id="step-tab-4">4. Harvest &amp; share</button>
-            </div>
-            <div class="machine-step__content" id="step-content-1" role="tabpanel" aria-labelledby="step-tab-1">
-                <h3>Preserve local flavor</h3>
-                <p>Farmers take a painless biopsy, store the genome signature, and calibrate marbling preferences. Each farm keeps exclusive rights to its strains, honoring heritage breeding.</p>
-            </div>
-            <div class="machine-step__content" id="step-content-2" role="tabpanel" aria-labelledby="step-tab-2" hidden>
-                <h3>Seed &amp; scaffold</h3>
-                <p>Cells are layered onto a mycelium-based scaffold grown from agricultural byproducts. The scaffold composts after use, cycling nutrients back into the farm.</p>
-            </div>
-            <div class="machine-step__content" id="step-content-3" role="tabpanel" aria-labelledby="step-tab-3" hidden>
-                <h3>Grow &amp; monitor</h3>
-                <p>AI-assisted dashboards track growth, energy use, and nutrient uptake. Farmers receive alerts when adjustments maintain premium quality and compliance.</p>
-            </div>
-            <div class="machine-step__content" id="step-content-4" role="tabpanel" aria-labelledby="step-tab-4" hidden>
-                <h3>Harvest &amp; share</h3>
-                <p>Steaks mature in fourteen days. Vacuum-sealed cuts are certified with QR provenance, enabling transparent storytelling at markets and restaurants.</p>
-            </div>
-        </section>
-
-        <section id="impact" class="section section--impact">
-            <div class="section__intro">
-                <h2>Forecasting impact across ecosystems</h2>
-                <p>Select an impact lens to explore how techno-moral foresight is built into every deployment.</p>
-            </div>
-            <div class="impact-lenses" role="tablist" aria-label="Impact lenses">
-                <button class="impact-lens is-active" data-impact="environmental" role="tab" aria-selected="true">Environmental</button>
-                <button class="impact-lens" data-impact="ethical" role="tab" aria-selected="false">Animal Dignity</button>
-                <button class="impact-lens" data-impact="economic" role="tab" aria-selected="false">Economic</button>
-                <button class="impact-lens" data-impact="social" role="tab" aria-selected="false">Social</button>
-            </div>
-            <div class="impact-panels">
-                <article class="impact-panel" data-impact="environmental">
-                    <h3>Closed-loop energy &amp; water</h3>
-                    <ul>
-                        <li>Bioreactors powered by on-site renewables reduce grid strain.</li>
-                        <li>Condensed water recovery cuts usage by 68% compared to feedlots.</li>
-                        <li>Spent medium feeds algae digesters, turning waste into fertilizer.</li>
-                    </ul>
+            <div class="impact__grid">
+                <article>
+                    <h3>Environmental impact</h3>
+                    <p>Traditional beef is a major source of water use and greenhouse gases. Growing meat directly from DNA removes slaughter, transport, and processing, cutting water use by ≈ 11 L per kilo and drastically lowering CO₂ emissions (source: National Advisory Committee on Microbiological Criteria for Food, 2018-2020).</p>
                 </article>
-                <article class="impact-panel" data-impact="ethical" hidden>
-                    <h3>Animal dignity in daily operations</h3>
-                    <ul>
-                        <li>Routine shifts from slaughter schedules to cell cultivation care.</li>
-                        <li>Veterinary roles pivot toward long-term herd wellbeing.</li>
-                        <li>Transparent welfare metrics become a new marketing standard.</li>
-                    </ul>
+                <article>
+                    <h3>Moral concerns</h3>
+                    <p>The debate between animal-welfare and meat-lover camps is reframed: DNA is collected non-invasively from well-kept cows, eliminating slaughter guilt.</p>
                 </article>
-                <article class="impact-panel" data-impact="economic" hidden>
-                    <h3>Farmer-owned intellectual terroir</h3>
-                    <ul>
-                        <li>DNA libraries stay farm-specific, protecting premium flavors.</li>
-                        <li>Financing includes cooperative ownership to avoid corporate capture.</li>
-                        <li>Milk and egg producers diversify with hybrid protein portfolios.</li>
-                    </ul>
-                </article>
-                <article class="impact-panel" data-impact="social" hidden>
-                    <h3>Transparent community benefit agreements</h3>
-                    <ul>
-                        <li>Local apprenticeships translate bioprocess skills into rural jobs.</li>
-                        <li>Public tasting labs foster dialogue about culture and cuisine.</li>
-                        <li>Equity fund subsidizes machines for smallholder and Indigenous farms.</li>
-                    </ul>
+                <article>
+                    <h3>Supply chain disruption</h3>
+                    <p>The tech decentralizes meat production. Farmers become DNA caretakers and machine operators; restaurants produce steaks in-house; consumers gain full transparency. Power shifts back to local producers, creating fresher and more resilient food systems.</p>
                 </article>
             </div>
-        </section>
-
-        <section id="ethics" class="section section--ethics">
-            <div class="section__intro">
-                <h2>Anticipating techno-moral side effects</h2>
-                <p>We probe beyond the obvious to surface hidden stakeholders, emergent behaviors, and shifting responsibilities before deployment.</p>
-            </div>
-            <div class="ethics-grid">
-                <article class="ethics-card">
-                    <h3>Unintended users</h3>
-                    <p>Chefs, cultured leather artisans, and biomedical labs can license modules. Governance charters outline secondary uses and require revenue sharing with the originating farm cooperative.</p>
-                </article>
-                <article class="ethics-card">
-                    <h3>Shifting roles</h3>
-                    <p>Farmhands become bioprocess stewards. Training pathways certify new competencies while preserving pasturecraft knowledge through mentorship stipends.</p>
-                </article>
-                <article class="ethics-card">
-                    <h3>Visibility of stakeholders</h3>
-                    <p>Dashboards highlight lifecycle data from feed suppliers to local councils, making supply chain actors legible so communities can co-create oversight boards.</p>
-                </article>
-                <article class="ethics-card">
-                    <h3>New rights &amp; obligations</h3>
-                    <p>Biofabrication makes traceability enforceable; consumers gain the right to provenance transparency, and farms commit to publishing welfare metrics quarterly.</p>
-                </article>
-                <article class="ethics-card">
-                    <h3>Access &amp; justice</h3>
-                    <p>Tiered pricing and cooperative lending prioritize historically marginalized farmers. Urban food labs partner to distribute steaks to food deserts at regulated prices.</p>
-                </article>
-                <article class="ethics-card">
-                    <h3>Valuing legacy skills</h3>
-                    <p>Artisanal butchery informs texture calibration. A digital archive records heritage techniques, ensuring they guide machine presets rather than vanish.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="resources" class="section section--resources">
-            <div class="section__intro">
-                <h2>Plan deployments with precision</h2>
-                <p>Adjust production variables to see how the machine scales within real farm constraints.</p>
-            </div>
-            <div class="resource-simulator" role="group" aria-label="Resource simulator">
-                <label for="batch-slider">Weekly batch count</label>
-                <input type="range" id="batch-slider" min="1" max="12" value="6" step="1" />
-                <output id="batch-output" for="batch-slider">6 batches</output>
-                <div class="resource-cards">
-                    <div class="resource-card">
-                        <h3>Biomass feed</h3>
-                        <p><span id="feed-value">1.8</span> tonnes of cellulose medium</p>
-                    </div>
-                    <div class="resource-card">
-                        <h3>Energy demand</h3>
-                        <p><span id="energy-value">4.2</span> MWh renewable energy</p>
-                    </div>
-                    <div class="resource-card">
-                        <h3>Protein yield</h3>
-                        <p><span id="yield-value">2.4</span> tonnes boneless steak</p>
-                    </div>
-                </div>
-                <p class="resource-note">Outputs capped to prevent market flooding and keep pricing stable. Licensing agreements require community impact audits once production surpasses 9 batches.</p>
-            </div>
-        </section>
-
-        <section class="section section--stories">
-            <div class="section__intro">
-                <h2>Field notes from early collaborators</h2>
-                <p>Farmers and partners share how the machine is reshaping their work and communities.</p>
-            </div>
-            <div class="stories-marquee" aria-live="polite">
-                <article class="story">
-                    <p>“We still graze our herd, but now the calmest cows become the DNA donors. My teenagers are excited to stay on the farm as biofabrication apprentices.”</p>
-                    <span>— Amaia, Basque cooperative farmer</span>
-                </article>
-                <article class="story">
-                    <p>“Our culinary school streams live tastings with farmers, letting students compare pasture-raised and cultured steaks from the same lineage.”</p>
-                    <span>— Jordan, community college instructor</span>
-                </article>
-                <article class="story">
-                    <p>“The machine freed up water, so we restored wetlands that now offset our remaining emissions and host eco-tourism workshops.”</p>
-                    <span>— Leila, regenerative rancher</span>
-                </article>
-            </div>
-        </section>
-
-        <section id="contact" class="section section--contact">
-            <div class="section__intro">
-                <h2>Co-design your steak future</h2>
-                <p>Join the next pilot cohort. We co-create deployment plans with farmers, chefs, regulators, and community advocates.</p>
-            </div>
-            <form class="contact-form">
-                <div class="form-field">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required />
-                </div>
-                <div class="form-field">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="you@farmcoop.org" required />
-                </div>
-                <div class="form-field">
-                    <label for="role">Role</label>
-                    <select id="role" name="role">
-                        <option>Farmer or Rancher</option>
-                        <option>Chef or Food Entrepreneur</option>
-                        <option>Policy Maker</option>
-                        <option>Researcher</option>
-                        <option>Investor</option>
-                    </select>
-                </div>
-                <div class="form-field form-field--full">
-                    <label for="message">Tell us about your goals</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Share your context, ambitions, and questions"></textarea>
-                </div>
-                <button class="button button--primary" type="submit">Request a pilot blueprint</button>
-            </form>
-            <div class="contact-meta">
-                <p><strong>Resonant Ranch Labs HQ</strong><br />2040 Stewardship Way, Boulder, CO</p>
-                <p><strong>Inquiries</strong><br /><a href="mailto:hello@resonant.ranch">hello@resonant.ranch</a></p>
-                <p><strong>Cooperative Hotline</strong><br />+1 (970) 555-1400</p>
+            <div class="section__cta">
+                <a class="button button--primary" href="how-it-works.html#why-it-matters">Discover why this matters</a>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <p>&copy; 2040 Resonant Ranch Labs Cooperative. Cultivating ethical abundance together.</p>
-        <button class="back-to-top" data-scroll-target="#top">Back to top</button>
+    <footer class="site-footer" id="contact">
+        <div class="footer__content">
+            <p>Contact us: <a href="mailto:info@make-yourownsteak.com">info@make-yourownsteak.com</a></p>
+            <p>&copy; <span id="year"></span> Make-Your-Own-Steak. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

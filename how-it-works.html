@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How it works — Make-Your-Own-Steak Machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo"><a href="index.html">Make-Your-Own-Steak</a></div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+            <span class="sr-only">Menu</span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how-it-works.html" aria-current="page">How it works</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero hero--secondary" id="top">
+            <div class="hero__copy">
+                <p class="hero__eyebrow">How it works</p>
+                <h1>Food that respects life.</h1>
+                <p class="hero__tagline">Simple, transparent, and safe.</p>
+                <a class="button button--primary" href="#principle">Explore the process</a>
+            </div>
+            <figure class="hero__visual" aria-labelledby="how-visual-caption">
+                <div class="hero__device hero__device--video" role="img" aria-label="Looped cell growth animation"></div>
+                <figcaption id="how-visual-caption">Multimedia: Looped background video of cell growth animation.</figcaption>
+            </figure>
+        </section>
+
+        <section id="principle" class="section" aria-labelledby="principle-heading">
+            <div class="section__header">
+                <h2 id="principle-heading">The principle</h2>
+                <p>Every steak contains a “recipe”: its DNA. Our technology grows real muscle tissue cell by cell inside a sealed biochamber, no slaughter, antibiotics, or additives. Only pure biology.</p>
+            </div>
+            <div class="media-callout">
+                <div class="media-callout__media" aria-label="Diagram showing DNA to steak progression"></div>
+                <p class="multimedia-note">Media: Diagram showing “DNA → cell → fiber → steak”.</p>
+            </div>
+        </section>
+
+        <section id="process" class="section" aria-labelledby="process-heading">
+            <div class="section__header">
+                <h2 id="process-heading">The process</h2>
+            </div>
+            <ol class="process-list">
+                <li>
+                    <h3>DNA sampling</h3>
+                    <p>A painless swab from a healthy cow is processed in certified labs to create a unique cell line.</p>
+                </li>
+                <li>
+                    <h3>Cell cultivation</h3>
+                    <p>Cells grow in a nutrient-rich medium (amino acids, sugars, vitamins, growth factors). The machine regulates temperature, pH, and oxygen.</p>
+                </li>
+                <li>
+                    <h3>Tissue formation</h3>
+                    <p>Cells multiply into muscle fibers, forming a steak identical in composition to traditional meat.</p>
+                </li>
+                <li>
+                    <h3>Harvest &amp; finishing</h3>
+                    <p>Once ready, the machine alerts the user; steak is removed and cooked; the chamber self-sterilizes.</p>
+                </li>
+            </ol>
+            <p class="multimedia-note">Media: four-step timeline graphic.</p>
+        </section>
+
+        <section id="science" class="section" aria-labelledby="science-heading">
+            <div class="section__header">
+                <h2 id="science-heading">The science</h2>
+                <p>We explain bio-synthesis principles; reference tissue engineering and controlled growth environments.</p>
+            </div>
+            <div class="media-callout">
+                <div class="media-callout__media" aria-label="Short educational animation placeholder"></div>
+                <p class="multimedia-note">Media: Short educational animation.</p>
+            </div>
+        </section>
+
+        <section id="why-it-matters" class="section section--alt" aria-labelledby="ethics-heading">
+            <div class="section__header">
+                <h2 id="ethics-heading">The ethics</h2>
+                <p>Our approach respects animal welfare, empowers producers, and offers consumers full transparency.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer__content">
+            <p>Contact us: <a href="mailto:info@make-yourownsteak.com">info@make-yourownsteak.com</a></p>
+            <p>&copy; <span id="year"></span> Make-Your-Own-Steak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

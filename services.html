@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services — Make-Your-Own-Steak Machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo"><a href="index.html">Make-Your-Own-Steak</a></div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+            <span class="sr-only">Menu</span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how-it-works.html">How it works</a></li>
+                <li><a href="services.html" aria-current="page">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section" aria-labelledby="services-heading">
+            <div class="section__header">
+                <h1 id="services-heading">More than a machine: an ecosystem.</h1>
+            </div>
+            <div class="services-grid">
+                <article>
+                    <h2>The Machines</h2>
+                    <p><strong>Compact (kitchen size):</strong> Microwave-sized for homes/restaurants.</p>
+                    <p><strong>Industrial (batch size):</strong> Washing-machine scale for larger output.</p>
+                    <p class="multimedia-note">Media: Side-by-side product photos.</p>
+                </article>
+                <article>
+                    <h2>DNA Sampling Kits</h2>
+                    <p>Safe, painless kits for farmers; processed in certified labs into traceable DNA capsules ensuring ethical sourcing.</p>
+                    <p class="multimedia-note">Media: Photo + diagram of kit.</p>
+                </article>
+                <article>
+                    <h2>Nutrient Cartridges</h2>
+                    <p>Balanced, pre-packed blends verified for food safety and optimized for taste and texture.</p>
+                    <p class="multimedia-note">Media: Carousel of cartridge types.</p>
+                </article>
+                <article>
+                    <h2>Transition Programs for Farmers</h2>
+                    <p>Consultancy, training, and support for shifting from livestock raising to DNA caretaking and machine operation, creating new income streams and reducing mass farming.</p>
+                </article>
+                <article>
+                    <h2>Data services</h2>
+                    <p>Dashboard showing water and CO₂ savings + demand trends.</p>
+                    <p class="multimedia-note">Media: Dashboard screenshot.</p>
+                </article>
+                <article>
+                    <h2>Consumer education</h2>
+                    <p>Workshops and guides explaining lab-grown meat to build trust and pride in sustainable choices.</p>
+                </article>
+                <article>
+                    <h2>Maintenance &amp; Certification</h2>
+                    <p>Regular calibration, software updates, and quality control meeting EU food-safety standards.</p>
+                    <p class="multimedia-note">Media: Certification badges icon row.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="notice" aria-labelledby="reassurance-heading">
+            <div class="container">
+                <h2 id="reassurance-heading">Reassurance</h2>
+                <p>All services comply with European food safety standards and are supported by certified biotech labs.</p>
+            </div>
+        </section>
+
+        <section id="pilot" class="section" aria-labelledby="pilot-heading">
+            <div class="section__header">
+                <h2 id="pilot-heading">From pilot to plate.</h2>
+                <p>Currently available through controlled pilots in the Netherlands.</p>
+            </div>
+            <div class="pilot-grid">
+                <div>
+                    <p>We are onboarding:</p>
+                    <ul>
+                        <li>Farmers supplying DNA and operating machines.</li>
+                        <li>Restaurants/ retailers serving lab-grown steaks.</li>
+                        <li>Research partners developing safety and labeling frameworks.</li>
+                    </ul>
+                    <p class="subtext">Consumer versions pending regulatory approval; pre-registration soon.</p>
+                    <a class="button button--primary" href="mailto:info@make-yourownsteak.com?subject=Pilot%20access%20request">Apply for pilot access</a>
+                </div>
+                <figure aria-labelledby="pilot-media-caption">
+                    <div class="map-placeholder" role="img" aria-label="Map of Netherlands with pilot locations"></div>
+                    <figcaption id="pilot-media-caption">Media: Map of Netherlands with pilot locations.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section--alt" aria-labelledby="directory-heading">
+            <div class="section__header">
+                <h2 id="directory-heading">Find your nearest pilot partner.</h2>
+                <p>Pilot “meat kits” (DNA capsules + nutrient cartridges) are available only at approved locations:</p>
+            </div>
+            <ul class="checklist">
+                <li>Partner restaurants.</li>
+                <li>Certified farmers offering local DNA capsules.</li>
+                <li>Selected retailers/ online platforms.</li>
+            </ul>
+            <div class="map-widget">
+                <div id="pilot-map" class="map-widget__placeholder" role="img" aria-label="Interactive map widget placeholder"></div>
+                <p class="notice-text">Notice: Availability depends on regional approvals and partnerships.</p>
+                <a class="button button--ghost" href="#pilot-map">See locations near you</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer__content">
+            <p>Contact us: <a href="mailto:info@make-yourownsteak.com">info@make-yourownsteak.com</a></p>
+            <p>&copy; <span id="year"></span> Make-Your-Own-Steak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
